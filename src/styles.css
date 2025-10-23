@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    @apply bg-gray-900 text-gray-100 font-sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+}
+
+a {
+    @apply text-green-600 hover:text-green-500;
+}
+
+button {
+    @apply bg-green-600 text-gray-100 rounded-lg px-4 py-2;
+}
+
+button.red {
+    @apply bg-red-600 text-gray-100;
+}
+
+.card {
+    @apply bg-gray-800 rounded-lg shadow-xl p-4;
+}
+
+.card-title {
+    @apply text-amber-400;
+}
+
+.card-description {
+    @apply text-gray-300;
+}
+
+.grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+.container {
+    @apply max-w-7xl mx-auto px-4;
+}
+
+.notification {
+    @apply fixed top-0 right-0 m-4 p-4 rounded-lg shadow-lg;
+}
+
+.notification.success {
+    @apply bg-green-600 text-gray-100;
+}
+
+.notification.error {
+    @apply bg-red-600 text-gray-100;
+}
